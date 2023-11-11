@@ -1,0 +1,148 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-condensed-v27-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/roboto-condensed-v27-latin-600.woff2') format('woff2');
+}
+
+:root {
+  --color-brand-wight: #ffffff;
+  --color-brand-lingt: #2b7fff;
+  --color-brand-dark: #011c44;
+}
+
+/* Base */
+
+body {
+  color: var(--color-brand-dark);
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+address {
+  font-style: normal;
+}
+
+/* delete dot */
+ul {
+  list-style-type: none;
+}
+
+/* header-link */
+.link {
+  color: var(--color-brand-dark);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-brand-lingt);
+  font-weight: 700;
+}
+
+/* Hero-title */
+.hero-title {
+  color: var(--color-brand-lingt);
+  font-family: Play, sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.button {
+  color: var(--color-brand-wight);
+  font-weight: 600;
+  background-color: var(--color-brand-lingt);
+  border-radius: 32px;
+  border: 2px solid var(--color-brand-lingt);
+}
+
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
+}
+
+.hero-paragraf {
+  color: #4a4a4a;
+}
+
+/* Advantages sectin */
+
+.about-us-paragraf {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.about-us-paragraf .uppercase {
+  font-weight: 600;
+}
+
+/* Section-title */
+
+.section-title {
+  font-family: Play, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1;
+}
+
+.section-title .accent {
+  color: var(--color-brand-lingt);
+}
+
+/* why we  */
+.why-we-text {
+  color: #000;
+  line-height: 1.3;
+}
+
+/* our procedure */
+.our-procedure-text {
+  color: var(--color-brand-wight);
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+/* footer */
+
+.footer-link {
+  color: var(--color-brand-wight);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--color-brand-lingt);
+  font-weight: 700;
+}
+
+.footer-copyright {
+  color: #747272;
+  font-size: 13px;
+}
