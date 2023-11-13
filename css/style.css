@@ -38,24 +38,56 @@
 
 /* Base */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-brand-dark);
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
 address {
   font-style: normal;
 }
 
-/* delete dot */
 ul {
   list-style-type: none;
+  /* delete dot */
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1288px;
+  padding: 0 24px;
 }
 
 /* header-link */
+.header-navigation {
+  background-color: transparent;
+}
+.navigation link {
+  background-color: rgba(255, 255, 255, 0.25);
+}
 .link {
   color: var(--color-brand-dark);
   text-decoration: none;
@@ -67,12 +99,16 @@ ul {
 }
 
 /* Hero-title */
+.hero-paragraf-one {
+  margin-bottom: 14px;
+}
 .hero-title {
   color: var(--color-brand-lingt);
-  font-family: Play, sans-serif;
+  font-family: 'Play', sans-serif;
   font-size: 140px;
   font-weight: 700;
   line-height: 1;
+  margin-bottom: 40px;
 }
 
 .button {
@@ -81,6 +117,8 @@ ul {
   background-color: var(--color-brand-lingt);
   border-radius: 32px;
   border: 2px solid var(--color-brand-lingt);
+  padding: 16px 32px;
+  margin-bottom: 14px;
 }
 
 .button:hover {
@@ -92,21 +130,11 @@ ul {
   color: #4a4a4a;
 }
 
-/* Advantages sectin */
-
-.about-us-paragraf {
-  font-size: 22px;
-  line-height: 1.7;
-}
-
-.about-us-paragraf .uppercase {
-  font-weight: 600;
-}
-
 /* Section-title */
 
 .section-title {
-  font-family: Play, sans-serif;
+  margin-bottom: 48px;
+  font-family: 'Play', sans-serif;
   font-weight: 700;
   font-size: 64px;
   line-height: 1;
@@ -114,6 +142,22 @@ ul {
 
 .section-title .accent {
   color: var(--color-brand-lingt);
+}
+
+/* About us */
+
+.about-title {
+  margin-bottom: 40px;
+}
+
+.about-us-paragraf {
+  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.about-us-paragraf .uppercase {
+  font-weight: 600;
 }
 
 /* why we  */
