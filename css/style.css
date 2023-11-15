@@ -66,6 +66,8 @@ address {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   /* delete dot */
 }
@@ -82,12 +84,27 @@ ul {
 }
 
 /* header-link */
+
 .header-navigation {
-  background-color: transparent;
-}
-.navigation link {
   background-color: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 240px;
 }
+
+.header-link {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
 .link {
   color: var(--color-brand-dark);
   text-decoration: none;
@@ -95,7 +112,6 @@ ul {
 
 .link:hover {
   color: var(--color-brand-lingt);
-  font-weight: 700;
 }
 
 /* Hero-title */
@@ -146,6 +162,19 @@ ul {
 
 /* About us */
 
+.about-us-container {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us-content {
+  max-width: 709px;
+}
+
+.about-us-img {
+  display: flex;
+  flex-direction: column;
+}
+
 .about-title {
   margin-bottom: 40px;
 }
@@ -161,19 +190,80 @@ ul {
 }
 
 /* why we  */
+
+.why-we-section {
+  padding-top: 128px;
+}
+
+.why-we {
+  text-align: center;
+}
+
+.why-we-container {
+  display: flex;
+  gap: 56px;
+}
+
 .why-we-text {
   color: #000;
   line-height: 1.3;
 }
 
 /* our procedure */
+.our-procedure-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.our-procedure-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-cards {
+  padding: 372px 77px 32px 115px;
+  border: 5px solid darkblue;
+  border-radius: 4px 120px;
+}
+
 .our-procedure-text {
   color: var(--color-brand-wight);
   font-size: 22px;
   line-height: 1.2;
+  margin: 0;
 }
 
 /* footer */
+.footer-container {
+  display: flex;
+  background-color: slategrey;
+  gap: 186px;
+}
+
+.container-nav {
+  display: flex;
+  gap: 186px;
+}
+
+.container-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-adress {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-footer-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-p {
+  display: flex;
+  flex-direction: column;
+}
 
 .footer-link {
   color: var(--color-brand-wight);
@@ -183,7 +273,6 @@ ul {
 
 .footer-link:hover {
   color: var(--color-brand-lingt);
-  font-weight: 700;
 }
 
 .footer-copyright {
