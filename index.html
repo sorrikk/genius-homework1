@@ -17,33 +17,49 @@
 <body>
    <header>
       <div class="container">
-         <nav class="header-navigation">
-            <a href="./index.html">
-               <img src="./imegeshome/logo.svg" alt="Лого косметологічної клініки" />
-            </a>
-            <ul class="header-link">
-               <li><a class="link" href="#about-us">Про нас</a></li>
-               <li><a class="link" href="#our-procedure">Наші процедури</a></li>
-               <li><a class="link" href="#why-we">Чому ми</a></li>
-               <li><a class="link" href="#contact">Контакти</a></li>
-            </ul>
-            <ul class="header-icons">
-               <li><a href=""><!-- <li>лого інсти фейса</li> -->te</a></li>
-               <li><a href=""><!-- <li>лого інсти фейса</li> -->fa</a></li>
-               <li><a href=""><!-- <li>лого інсти фейса</li> -->in</a></li>
-            </ul>
-         </nav>
+         <div class="header-container">
+            <nav class="header-nav">
+               <a href="./index.html">
+                  <img src="./imegeshome/logo.svg" alt="Лого косметологічної клініки" />
+               </a>
+               <ul class="header-ul">
+                  <li><a class="link" href="#about-us">Про нас</a></li>
+                  <li><a class="link" href="#our-procedure">Наші процедури</a></li>
+                  <li><a class="link" href="#why-we">Чому ми</a></li>
+                  <li><a class="link" href="#contact">Контакти</a></li>
+               </ul>
+               <ul class="header-icons">
+                  <li><a href="#">
+                        <svg width="32" height="32">
+                           <use href="./imegeshome/icons.svg#icon-telefone"></use>
+                        </svg>
+                     </a></li>
+                  <li><a href="#">
+                        <svg width="32" height="32">
+                           <use href="./imegeshome/icons.svg#icon-facebook"></use>
+                        </svg>
+                     </a></li>
+                  <li><a href="#">
+                        <svg width="32" height="32">
+                           <use href="./imegeshome/icons.svg#icon-instagram"></use>
+                        </svg>
+                     </a></li>
+               </ul>
+            </nav>
+         </div>
       </div>
    </header>
    <main>
-      <section class="hero-text">
+      <section class="hero-section">
          <div class="container">
-            <p class="hero-paragraf-one">Косметологічна клініка</p>
-            <h1 class="hero-title" lang="en">Beauty <br>Zone</h1>
-            <button class="button" type="button">Замовити дзвінок</button>
-            <p class="hero-paragraf">
-               Запишись та отримай безкоштовну консультацію нашого косметолога
-            </p>
+            <div class="hero-container">
+               <p class="hero-paragraf-one">Косметологічна клініка</p>
+               <h1 class="hero-title" lang="en">Beauty <br>Zone</h1>
+               <button class="button" type="button">Замовити дзвінок</button>
+               <p class="hero-paragraf">
+                  Запишись та отримай безкоштовну <br> консультацію нашого косметолога
+               </p>
+            </div>
          </div>
       </section>
       <section class="section" id="about-us">
@@ -67,13 +83,12 @@
                   <img src="./imegeshome/start-prozedyre.jpg" alt="результат до процедури" />
                   <img src="./imegeshome/after-prossedyre.jpg" alt="результат після процедури" />
                </div>
-
             </div>
          </div>
       </section>
       <section class="why-we-section section" id="why-we">
          <div class="container">
-            <h2 class="why-we section-title">Чому люди <br><span class="accent">обирають нас</span></h2>
+            <h2 class="why-we section-title center">Чому люди <br><span class="accent">обирають нас</span></h2>
             <ul class="why-we-container">
                <li class=" why-we-text">
                   Всі наші косметологи мають вищу медичну освіту та стаж роботи
@@ -91,70 +106,81 @@
       </section>
       <section class="section" id="our-procedure">
          <div class="container">
-            <h2 class="section-title">Наші <span class="accent">процедури</span></h2>
-            <ul class="our-procedure-list">
-               <li class="our-procedure-item">
-                  <article class="format-cards">
-                     <p class="our-procedure-text">Маски для обличчя</p>
-                  </article>
-               </li>
-               <li class="our-procedure-item">
-                  <article class="format-cards">
-                     <p class="our-procedure-text">Ін'єкцї для обличчя</p>
-                  </article>
-               </li>
-               <li class="our-procedure-item">
-                  <article class="format-cards">
-                     <p class="our-procedure-text"> Очищення обличчя</p>
-                  </article>
-               </li>
-               <li class="our-procedure-item">
-                  <article class="format-cards">
-                     <p class="our-procedure-text">Ін'єкцї для обличчя</p>
-                  </article>
-               </li>
-               <li class="our-procedure-item">
-                  <article class="format-cards">
-                     <p class="our-procedure-text"> Очищення обличчя</p>
-                  </article>
-               </li>
-            </ul>
+            <h2 class="section-title center">Наші <span class="accent">процедури</span></h2>
+            <div class="procedure-container">
+               <button class="carousel-button" type="button">
+                  <svg width="44" height="44">
+                     <use href="./imegeshome/icons.svg#icon-arrow"></use>
+                  </svg>
+               </button>
+               <ul class="our-procedure-list">
+                  <li class="our-procedure-item">
+                     <article class="format-cards">
+                        <p class="our-procedure-text">Маски для обличчя</p>
+                     </article>
+                  </li>
+                  <li class="our-procedure-item">
+                     <article class="format-cards">
+                        <p class="our-procedure-text">Ін'єкцї для обличчя</p>
+                     </article>
+                  </li>
+                  <li class="our-procedure-item">
+                     <article class="format-cards">
+                        <p class="our-procedure-text"> Очищення обличчя</p>
+                     </article>
+                  </li>
+                  <li class="our-procedure-item">
+                     <article class="format-cards">
+                        <p class="our-procedure-text">Ін'єкцї для обличчя</p>
+                     </article>
+                  </li>
+                  <li class="our-procedure-item">
+                     <article class="format-cards">
+                        <p class="our-procedure-text"> Очищення обличчя</p>
+                     </article>
+                  </li>
+               </ul>
+               <button class="carousel-button" type="button">
+                  <svg width="44" height="44">
+                     <use href="./imegeshome/icons.svg#icon-arrow"></use>
+                  </svg>
+               </button>
+            </div>
          </div>
       </section>
       <section class="section" id="contact">
          <div class="container">
-            <h2 class="section-title">Як нас <span class="accent">знайти</span></h2>
-            <iframe
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1699373301442!5m2!1sru!2sua"
-               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-               referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <form>
-               <h3>Запишіться <span> безкоштовно</span> та отримайте подарунок</h3>
-               <p>Ваше ім'я та прізвище</p>
-               <p>Ваш номер телефону</p>
-               <p>Ваша електронна пошта</p>
-               <button class="button" type="button">Записатись безкоштовно</button>
-               <p> Натискаючи на кнопку я погоджуюсь <a href="">з політикою конфіденційності</a></p>
-            </form>
+            <h2 class="section-title center">Як нас <span class="accent">знайти</span></h2>
+            <div class="contact-container">
+               <iframe class="contact-map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1699373301442!5m2!1sru!2sua"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+               <div class="contact form">
+                  <h3>Запишіться <span> безкоштовно</span> та отримайте подарунок</h3>
+               </div>
+            </div>
          </div>
       </section>
    </main>
-   <footer>
+   <footer class="footer">
       <div class="container">
          <div class="footer-container">
-            <nav class="container-nav">
-               <a href="#">
-                  <img src="./imegeshome/logo.svg" alt="Лого косметологічної клініки" />
-               </a>
-               <ul class="container-link">
-                  <li><a class="footer-link" href="#">Про нас</a></li>
-                  <li><a class="footer-link" href="#">Наші процедури</a></li>
-                  <li><a class="footer-link" href="#">Чому ми</a></li>
-                  <li><a class="footer-link" href="#">Контакти</a></li>
+            <nav class="footer-nav">
+               <div class="footer-logo">
+                  <a href="#">
+                     <img src="./imegeshome/logo.svg" alt="Лого косметологічної клініки" />
+                  </a>
+               </div>
+               <ul class="footer-menu">
+                  <li><a class="footer-link" href="#about-us">Про нас</a></li>
+                  <li><a class="footer-link" href="#our-procedure">Наші процедури</a></li>
+                  <li><a class="footer-link" href="#why-we">Чому ми</a></li>
+                  <li><a class="footer-link" href="#contact">Контакти</a></li>
                </ul>
             </nav>
-            <address class="footer-adress">
-               <ul class="container-footer-link">
+            <address class="footer-address">
+               <ul class="address-list">
                   <li><a class="footer-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
                   <li>
                      <a class="footer-link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
@@ -164,19 +190,29 @@
                         Київ, вул. Тарас
                         Шевченка 5</a></li>
                   <li>
-                     <a href="#"> te</a>
-                     <!--  telephone icon-->
+                     <a class="footer-icons" href="#">
+                        <svg width="42" height="42">
+                           <use href="./imegeshome/icons.svg#icon-telefone"></use>
+                        </svg>
+                     </a>
                   </li>
                   <li>
-                     <a href="">fa</a>
-                     <!--facebook icon  -->
+                     <a class="footer-icons" href="">
+                        <svg width="42" height="42">
+                           <use href="./imegeshome/icons.svg#icon-facebook"></use>
+                        </svg>
+                     </a>
+
                   </li>
                   <li>
-                     <a href="#">in</a>
-                     <!-- insta icon -->
+                     <a class="footer-icons" href="#">
+                        <svg width="42" height="42">
+                           <use href="./imegeshome/icons.svg#icon-instagram"></use>
+                        </svg>
+                     </a>
                   </li>
                </ul>
-               <div class="container-p">
+               <div class="address-info">
                   <a class="footer-link" href="#" target="_blank">Політика конфіденційності</a>
                   <p class="footer-copyright">&copy; 2022 Дані захищені</p>
                </div>
