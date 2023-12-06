@@ -15,7 +15,7 @@
 </head>
 
 <body>
-   <header>
+   <header class="header">
       <div class="container">
          <div class="header-container">
             <nav class="header-nav">
@@ -29,17 +29,17 @@
                   <li><a class="link" href="#contact">Контакти</a></li>
                </ul>
                <ul class="header-icons">
-                  <li><a href="#">
+                  <li><a class="header-icon" href="#">
                         <svg width="32" height="32">
                            <use href="./imegeshome/icons.svg#icon-telefone"></use>
                         </svg>
                      </a></li>
-                  <li><a href="#">
+                  <li><a class="header-icon" href="#">
                         <svg width="32" height="32">
                            <use href="./imegeshome/icons.svg#icon-facebook"></use>
                         </svg>
                      </a></li>
-                  <li><a href="#">
+                  <li><a class="header-icon" href="#">
                         <svg width="32" height="32">
                            <use href="./imegeshome/icons.svg#icon-instagram"></use>
                         </svg>
@@ -55,7 +55,7 @@
             <div class="hero-container">
                <p class="hero-paragraf-one">Косметологічна клініка</p>
                <h1 class="hero-title" lang="en">Beauty <br>Zone</h1>
-               <button class="button" type="button">Замовити дзвінок</button>
+               <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
                <p class="hero-paragraf">
                   Запишись та отримай безкоштовну <br> консультацію нашого косметолога
                </p>
@@ -140,7 +140,7 @@
                      </article>
                   </li>
                </ul>
-               <button class="carousel-button" type="button">
+               <button class="carousel-button next" type="button">
                   <svg width="44" height="44">
                      <use href="./imegeshome/icons.svg#icon-arrow"></use>
                   </svg>
@@ -173,31 +173,32 @@
                   </a>
                </div>
                <ul class="footer-menu">
-                  <li><a class="footer-link" href="#about-us">Про нас</a></li>
-                  <li><a class="footer-link" href="#our-procedure">Наші процедури</a></li>
-                  <li><a class="footer-link" href="#why-we">Чому ми</a></li>
-                  <li><a class="footer-link" href="#contact">Контакти</a></li>
+                  <li><a class="footer-link link" href="#about-us">Про нас</a></li>
+                  <li><a class="footer-link link" href="#our-procedure">Наші процедури</a></li>
+                  <li><a class="footer-link link" href="#why-we">Чому ми</a></li>
+                  <li><a class="footer-link link" href="#contact">Контакти</a></li>
                </ul>
             </nav>
             <address class="footer-address">
                <ul class="address-list">
-                  <li><a class="footer-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+                  <li><a class="footer-link link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
                   <li>
-                     <a class="footer-link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+                     <a class="footer-link link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
                   </li>
-                  <li><a class="footer-link" href="https://maps.app.goo.gl/hWmY1PAC29yXFLFR8" target="_blank">Україна,
+                  <li><a class="footer-link link" href="https://maps.app.goo.gl/hWmY1PAC29yXFLFR8"
+                        target="_blank">Україна,
                         м.
                         Київ, вул. Тарас
                         Шевченка 5</a></li>
                   <li>
-                     <a class="footer-icons" href="#">
+                     <a class="footer-icon" href="#">
                         <svg width="42" height="42">
                            <use href="./imegeshome/icons.svg#icon-telefone"></use>
                         </svg>
                      </a>
                   </li>
                   <li>
-                     <a class="footer-icons" href="">
+                     <a class="footer-icon" href="">
                         <svg width="42" height="42">
                            <use href="./imegeshome/icons.svg#icon-facebook"></use>
                         </svg>
@@ -205,7 +206,7 @@
 
                   </li>
                   <li>
-                     <a class="footer-icons" href="#">
+                     <a class="footer-icon" href="#">
                         <svg width="42" height="42">
                            <use href="./imegeshome/icons.svg#icon-instagram"></use>
                         </svg>
@@ -213,13 +214,20 @@
                   </li>
                </ul>
                <div class="address-info">
-                  <a class="footer-link" href="#" target="_blank">Політика конфіденційності</a>
+                  <a class="footer-link link" href="#" target="_blank">Політика конфіденційності</a>
                   <p class="footer-copyright">&copy; 2022 Дані захищені</p>
                </div>
             </address>
          </div>
       </div>
    </footer>
+   <div class="backdrop is-hidden">
+      <div class="modal">
+         <button class="modal-btn-close" type="button">Close </button>
+      </div>
+   </div>
+
+   <script src="./js/modal.js"></script>
 </body>
 
 </html>

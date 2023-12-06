@@ -92,6 +92,16 @@ ul {
 }
 
 /* header-link */
+.header {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 32px 0;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -117,13 +127,25 @@ ul {
   gap: 32px;
 }
 
+/* link */
 .link {
   color: var(--color-brand-dark);
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .link:hover {
   color: var(--color-brand-lingt);
+}
+
+/* icons */
+.header-icon {
+  fill: var(--color-brand-dark);
+  transition: 0.3s;
+}
+
+.header-icon:hover {
+  fill: var(--color-brand-lingt);
 }
 
 /* Hero-title */
@@ -262,6 +284,11 @@ ul {
   padding: 372px 77px 32px 115px;
   border: 5px solid darkblue;
   border-radius: 4px 120px;
+  transition: 0.3s;
+}
+
+.format-cards:hover {
+  transform: scale(1.05);
 }
 
 .our-procedure-text {
@@ -292,6 +319,10 @@ ul {
   background-color: var(--color-brand-lingt);
   fill: var(--color-brand-wight);
   border: 1px solid var(--color-brand-wight);
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
 }
 
 /* contact  */
@@ -332,21 +363,63 @@ ul {
   flex-grow: 1;
 }
 
-.footer-link {
+.footer-link.link {
   color: var(--color-brand-wight);
   font-size: 16px;
-  text-decoration: none;
 }
 
-.footer-link:hover {
+.footer-link.link:hover {
   color: var(--color-brand-lingt);
 }
 
-.footer-icons {
+.footer-icon {
   fill: var(--color-brand-wight);
+  transition: 0.3s;
+}
+
+.footer-icon:hover {
+  fill: var(--color-brand-lingt);
 }
 
 .footer-copyright {
   color: #747272;
   font-size: 13px;
+}
+
+/* Modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(1, 31, 74, 0.4);
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  height: 100%;
+  max-height: 680px;
+  background-color: var(--color-brand-dark);
+  border-radius: 48px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
